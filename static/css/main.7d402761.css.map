@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Previewer/Previewer.css"],"names":[],"mappings":"AAAA,qBACE,qBACA,yBAA4B","file":"static/css/main.7d402761.css","sourcesContent":[".previewer__textarea {\n  width: 100% !important;\n  min-height: 70vh !important;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/components/Previewer/Previewer.css"],"sourceRoot":""}
