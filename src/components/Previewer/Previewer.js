@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import marked from "marked";
 import { Row, Col, FormGroup, FormControl } from "react-bootstrap";
 
 class Previewer extends Component {
@@ -6,6 +7,10 @@ class Previewer extends Component {
     super(props);
 
     this.state = { text: "" };
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    document.getElementById("preview").innerHTML = marked(nextState.text);
   }
 
   onChangeHandler = event => {
@@ -18,11 +23,15 @@ class Previewer extends Component {
         <Col sm={6}>
           <form>
             <FormGroup>
-              <FormControl componentClass="textarea" value={this.state.text} onChange={this.onChangeHandler} />
+              <FormControl
+                componentClass="textarea"
+                value={this.state.text}
+                onChange={this.onChangeHandler}
+              />
             </FormGroup>
           </form>
         </Col>
-        <Col sm={6}>previewed text</Col>
+        <Col sm={6} id="preview" />
       </Row>
     );
   }
