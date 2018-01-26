@@ -1,11 +1,11 @@
 import React from 'react';
-import { Grid } from "react-bootstrap";
+import { Grid, PageHeader } from "react-bootstrap";
 import Previewer from "../Previewer/Previewer.js"
 
 const App = () => {
   return (
     <Grid className="App">
-      Markdown Previewer
+      <PageHeader>Markdown Previewer</PageHeader>
       <Previewer />
     </Grid>
   );
