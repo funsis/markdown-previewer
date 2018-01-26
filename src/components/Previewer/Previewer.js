@@ -69,7 +69,7 @@ Spain.
           <form>
             <FormGroup>
               <ControlLabel>
-                Work with CommonMark and GFM (no extensuions).
+                Work with CommonMark and GFM (no extensions).
               </ControlLabel>
               <FormControl
                 componentClass="textarea"
