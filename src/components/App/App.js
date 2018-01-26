@@ -4,7 +4,7 @@ import Previewer from "../Previewer/Previewer.js"
 
 const App = () => {
   return (
-    <Grid className="App">
+    <Grid className="app">
       <PageHeader>Markdown Previewer</PageHeader>
       <Previewer />
     </Grid>
